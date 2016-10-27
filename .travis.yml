@@ -1,7 +1,8 @@
 sudo: required
 dist: trusty
 
-before_install:
+install:
+  - sudo apt-get install devscripts
   # -s is required for installing from sources
   - sudo add-apt-repository -s 'deb http://archive.ubuntu.com/ubuntu/ xenial main universe multiverse' -y
   - sudo apt-get update
