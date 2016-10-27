@@ -10,4 +10,5 @@ before_install:
 
 script: 
   - gradle test
-  - sudo criu
+  - sudo sh -c 'which criu'
+  - sudo sh -c 'criu'
