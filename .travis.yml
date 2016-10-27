@@ -3,6 +3,7 @@ sudo: required
 dist: trusty
 
 before_install:
+  - sudo apt-get install apt-src
   - sudo apt-src install criu
 
 script: gradle test
