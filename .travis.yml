@@ -1,0 +1,5 @@
+language: c
+sudo: required
+dist: trusty
+
+script: gradle test
