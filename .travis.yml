@@ -2,7 +2,7 @@ sudo: required
 dist: trusty
 
 install:
-  - sudo apt-get install apt-src
+  - sudo apt-get install apt-src python-ipaddr python-protobuf
   # -s is required for installing from sources
   - sudo add-apt-repository -s 'deb http://archive.ubuntu.com/ubuntu/ xenial main universe multiverse' -y
   - sudo apt-get update
