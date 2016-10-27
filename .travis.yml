@@ -4,6 +4,8 @@ dist: trusty
 
 before_install:
   - sudo apt-get install apt-src
+  - sudo add-apt-repository 'deb-src http://archive.ubuntu.com/ubuntu/ xenial main universe multiverse' -y
+  - sudo apt-get update
   - sudo apt-src install criu
 
 script: gradle test
