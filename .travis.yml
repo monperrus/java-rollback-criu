@@ -6,10 +6,10 @@ install:
   # -s is required for installing from sources
   - sudo add-apt-repository -s 'deb http://archive.ubuntu.com/ubuntu/ xenial main universe multiverse' -y
   - sudo apt-get update
-  - sudo apt-src --build install criu
-  #- sudo apt-get source criu
-  #- sudo apt-get build-dep criu
-  #- sudo dpkg-buildpackage  -us -uc
+  #- sudo apt-src --build install criu
+  - sudo apt-get source criu
+  - sudo apt-get build-dep criu
+  - sudo dpkg-buildpackage  -us -uc
 
 script: 
   - gradle test
